@@ -11,15 +11,25 @@
 <a class="btn btn-primary linkStyle" href='index.php'>Return</a><br>
 <?php
 echo "<div class='container'>";
-include_once 'php_scripts/database.php';
-$sql = "DELETE FROM playlist WHERE userid='" . $_GET["userid"] . "'";
-if (mysqli_query($conn, $sql)) {
-	echo "Record deleted successfully";
-} else {
-	echo "Error deleting record " . mysqli_error($conn);
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect("localhost", "root", "Uktriathlon1", "media");
+ 
+// Check connection
+if($link === false){
+	die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-mysqli_close($conn);
+ $id = $_GET['id'];
+// Attempt delete query execution
+$sql = "DELETE FROM playlist WHERE id='3'";
+if(mysqli_query($link, $sql)){
+	echo "Records were deleted successfully.";
+} else{
+	echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+ 
+// Close connection
+mysqli_close($link);
 ?>
-
 </body>
 </html>
