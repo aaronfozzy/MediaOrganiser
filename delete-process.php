@@ -13,7 +13,7 @@
 echo "<div class='container'>";
 include_once 'php_scripts/database.php';
 $id = $_GET['id'];
-$sql = "DELETE FROM playlist WHERE id= 4";
+$sql = "DELETE FROM playlist WHERE id=4";
 if (mysqli_query($conn, $sql)) {
 	echo "Record deleted successfully";
 } else {
