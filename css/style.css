@@ -1,3 +1,7 @@
+p {
+	visibility: hidden;
+}
+
 * {
 	padding: 0;
 	margin:0;
@@ -21,7 +25,6 @@ body{
 	font-family: "Segoe UI Light", arial, sans-serif;
 	width: 100%;
 }
-#para {color:#2ecc71; text-align:center;margin-top:20px;}
 
 .status{
 	color:#2ecc71; 
@@ -62,12 +65,29 @@ form {
 
 /* BUTTON */
 
-.btn-primary {background-color: #336699;}
-.btn-primary:hover{background-color:#34495e;}
+.btn-primary {
+	background-color: #336699;
+}
 
+.btn-primary:hover{
+	background-color:#34495e;
+}
+
+.btn-primary-bottom {
+		background-color: #336699;
+		color:white;
+		margin:10px;
+		right:10px;
+		position: relative;
+	}
+	
+	.btn-primary:hover{
+		background-color:#34495e;
+	}
 /* LINKS <a> */
 
 a {color: white;}
+
 a.linkStyle {
 	text-align: center;
 	margin: 20px auto;

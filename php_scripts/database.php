@@ -2,11 +2,6 @@
 
 	$dbConnection = mysqli_connect('localhost', 'root', 'Uktriathlon1', 'media');
 	// where mysqli_connect('location', 'username', 'password', 'my_database');
-	if($dbConnection) { // Check database connection
-		echo "<p id='para'>Database status: Connected</p> ";
-	} else {
-		die("database connection failed"); //stop script and display error
-	}
 	if(isset($_POST['upload'])) { //if form is submitted from 'upload'
 		$file_name = $_FILES['file']['name']; // Array(file(name=>'name_of_file', ...))
 		$temp_name = $_FILES['file']['tmp_name'];
