@@ -42,7 +42,7 @@ h2 {
 
 input.form-control {
 	width: 80%;
-	margin: 0px auto;
+	margin: 5px auto;
 }
 
 input.form-control[type='file'] {
