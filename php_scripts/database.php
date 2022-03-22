@@ -19,7 +19,7 @@
 		}
 		 //create a directory in this file path
 		move_uploaded_file($temp_name, "upload/PlayList/$file_name"); //move the file from the temp to specified directory
-		$file_url = "http://localhost/media_organiser/upload/PlayList/$file_name";
+		$file_url = "http://localhost/upload/PlayList/$file_name";
 
 		$query = "INSERT INTO playlist(name, filetype, comment, url)"; //Add data in playlist rows "name" , "filetype" and "url"
 		$query .= "VALUES ('$file_name', '$file_type', '$file_comment', '$file_url')"; //Concatenate the values of $file_name , $file_type and $file_url values to each row.

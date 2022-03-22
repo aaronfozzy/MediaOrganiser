@@ -1,6 +1,6 @@
 	<?php
 
-	$dbConnection = mysqli_connect('localhost', 'root', 'Uktriathlon1!', 'media');
+	$dbConnection = mysqli_connect('localhost', 'root', 'Uktriathlon1', 'media');
 	$new_query = "SELECT * FROM `playlist` ";
 	$result =  mysqli_query($dbConnection, $new_query);
 
