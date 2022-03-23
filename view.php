@@ -23,9 +23,9 @@
 		while($row = mysqli_fetch_assoc($get_query)) { //loop through associative array and return media to be played
 			$name = $row['name'];
 			$url = $row['url']; //get the url form the database and echo out in a media tag <embed>
-			echo "<br><h2>Playing ". $name."</h2><br>";
+			echo "<br><h2>Showing ". $name."</h2><br>";
 
-			echo "<embed src='$url' height='480' width='720'><br><a class='btn btn-primary-bottom' href='php_scripts/change.php?=$id'>Change Name</a><a class='btn btn-primary-bottom' href='delete-process.php?=$id'>Remove</a>"; // Add edit tag
+			echo "<embed src='$url' height='480' width='720'><br><a class='btn btn-primary-bottom' href='php_scripts/change.php?=$id'>Change Name</a>"; // Add edit tag
 		}
 	} else {
 		echo "<p style='color:red;'>Failed to play media file></p>";
