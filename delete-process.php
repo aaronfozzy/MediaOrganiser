@@ -24,7 +24,7 @@ if (!$conn) {
 }
 
 // sql to delete a record
-$sql = "DELETE FROM playlist WHERE id=4";
+$sql = "DELETE FROM playlist WHERE id=5";
 
 if (mysqli_query($conn, $sql)) {
   echo "Record deleted successfully";

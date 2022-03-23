@@ -81,8 +81,11 @@ form {
 		position: relative;
 	}
 	
-	.btn-primary:hover{
+	.btn-primary-bottom:hover{
 		background-color:#34495e;
+		color: white;
+		border-style:solid;
+		border-color:#336699;
 	}
 /* LINKS <a> */
 
