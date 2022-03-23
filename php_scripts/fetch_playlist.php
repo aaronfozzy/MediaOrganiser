@@ -9,7 +9,7 @@
 	}
 	// create a table with the media data to be displayed
 	echo "<table class='table table-dark table-striped'>";
-	echo "<thead>" . "<tr>". "<td>". "ID". "</td>". "<td>". "view media". "</td>". "<td>". "filetype". "</td>". "<td>". "comment". "</td>"."<td>". "Remove". "</td>". "</tr>". "</thead>"; // create table header
+	echo "<thead>" . "<tr>". "<td>". "ID". "</td>". "<td>". "view media". "</td>". "<td>". "filetype". "</td>". "<td>". "comment". "</td>"."<td>". "Remove". "</td>"."<td>". "Change". "</td>". "</tr>". "</thead>"; // create table header
 
 	while($table_row = mysqli_fetch_assoc($result)) // loop and fetch table rows
 	{
@@ -19,11 +19,9 @@
 		$playlist_comment = $table_row['comment'];
 		$playlist_type = $table_row['filetype'];
 		$playlist_url = $table_row['url'];
-		$i =0;
-		
-		echo "<tr>". "<td>". $playlist_id. "</td>". "<td>". "<a class='btn btn-primary' href='view.php?id=$playlist_id'>View $playlist_name</a>"."</td>". "<td>". $playlist_type. "</td>". "<td>". $playlist_comment. "</td>". "<td>". "<a class='btn btn-primary' href='delete-process.php?id=$playlist_id'>Delete $playlist_name</a>"."</td>"."</tr>";
+				
+		echo "<tr>". "<td>". $playlist_id. "</td>". "<td>". "<a class='btn btn-primary' href='view.php?id=$playlist_id'>View $playlist_name</a>"."</td>". "<td>". $playlist_type. "</td>". "<td>". $playlist_comment. "</td>". "<td>". "<a class='btn btn-primary' href='delete-process.php?id=$playlist_id'>Delete</a>"."</td>"."<td>". "<a class='btn btn-primary' href='update-process.php?id=$playlist_id'>Change</a>"."</td>"."</tr>";
 	}
-	$i++;
 	echo "</table>";
 
 	?>
