@@ -13,33 +13,35 @@ $row= mysqli_fetch_array($result);
 <title>Update Data</title>
 </head>
 <body>
+	<a class="btn btn-primary linkStyle" href='index.php'>Return</a><br>
 	<div class="container">
-		<a class="btn btn-primary linkStyle" href='index.php'>Return</a><br>
+		<div class="form-group">
 		<form name="frmUser" method="post" action="">
 			<div><?php if(isset($message)) { echo $message; } ?>
 			</div>
 			<div style="padding:20px;">
-			<h4>Update Data</h4>
+			<h2>Update Data</h2>
 			</div>
 			ID: <br>
 			<input type="hidden" name="id" class="txtField" value="<?php echo $row['id']; ?>">
-			<input type="text" name="id"  value="<?php echo $row['id']; ?>">
+			<input class="form-control" type="text" name="id"  value="<?php echo $row['id']; ?>">
 			<br>
 			 Name: <br>
-			<input type="text" name="name" class="txtField" value="<?php echo $row['name']; ?>">
+			<input class="form-control" type="text" name="name" class="txtField" value="<?php echo $row['name']; ?>">
 			<br>
 			Comment :<br>
-			<input type="text" name="comment" class="txtField" value="<?php echo $row['comment']; ?>">
+			<input class="form-control" type="text" name="comment" class="txtField" value="<?php echo $row['comment']; ?>">
 			<br>
 			Filetype:<br>
-			<input type="text" name="filetype" class="txtField" value="<?php echo $row['filetype']; ?>">
+			<input class="form-control" type="text" name="filetype" class="txtField" value="<?php echo $row['filetype']; ?>">
 			<br>
 			Image:<br>
-			<input type="url" name="url" class="txtField" value="<?php echo $row['url']; ?>">
+			<input class="form-control" type="url" name="url" class="txtField" value="<?php echo $row['url']; ?>">
 			<br>
-			<input type="submit" name="submit" value="Submit" class="button">
+			<input class="form-control btn btn-primary" type="submit" name="submit" value="Submit" class="button">
 			
 			</form>
+		</div>
 	</div>
 	</body>
 </html>
