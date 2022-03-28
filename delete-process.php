@@ -12,7 +12,7 @@
 <?php
 echo "<div class='container'>";
 include_once 'php_scripts/database2.php';
-$sql = "DELETE FROM playlist WHERE id='" . $_GET["id"] . "'";
+$sql = "DELETE FROM playlist WHERE id='" . $_GET["id"] . "'"; //Deletes the ID you are currently on
 if (mysqli_query($conn, $sql)) {
 	echo "Record deleted successfully";
 } else {
