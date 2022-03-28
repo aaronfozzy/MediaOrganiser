@@ -20,9 +20,6 @@
 			<!-- required, basic validation method -->
 			<input class="form-control btn btn-primary" type="submit" name="upload" value="Upload">
 			<div></div>
-			<?php 
-				//echo that the file has been uploaded
-			?>
 		</form>
 		<!-- Create table of media files -->
 		<?php include("php_scripts/fetch_playlist.php"); ?> 
