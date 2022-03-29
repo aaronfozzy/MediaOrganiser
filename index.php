@@ -15,7 +15,8 @@
 			<form  method='post' action="index.php" enctype="multipart/form-data">
 			<!-- we will be sending data to database, hence the use of POST -->
 			<input class="form-control" type="file" name="file">
-			<input class="form-control" type="text" name="comment" placeholder="enter your comment" required>
+			<input class="form-control-text" type="text" name="comment" placeholder="enter your comment" required>
+			<input class="form-control-text" type="text" name="Category" placeholder="Category" required>
 			<!-- required, basic validation method -->
 			<input class="form-control btn btn-primary" type="submit" name="upload" value="Upload">
 			<div></div>

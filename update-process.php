@@ -1,7 +1,7 @@
 <?php
 include_once 'php_scripts/database2.php';
 if(count($_POST)>0) {
-mysqli_query($conn,"UPDATE playlist SET id='" . $_POST['id'] . "', name='" . $_POST['name'] . "', comment='" . $_POST['comment'] . "', filetype='" . $_POST['filetype'] . "' ,url='" . $_POST['url'] . "' WHERE id='" . $_POST['id'] . "'");
+mysqli_query($conn,"UPDATE playlist SET id='" . $_POST['id'] . "', name='" . $_POST['name'] . "', comment='" . $_POST['comment'] . "', filetype='" . $_POST['filetype'] . "' ,url='" . $_POST['url'] . "', Category='" . $_POST['Category'] . "' WHERE id='" . $_POST['id'] . "'");
 $message = "Record Modified Successfully";
 }
 $result = mysqli_query($conn,"SELECT * FROM playlist WHERE id='" . $_GET['id'] . "'");
@@ -31,6 +31,9 @@ $row= mysqli_fetch_array($result);
 			<br>
 			Comment :<br>
 			<input class="form-control" type="text" name="comment" class="txtField" value="<?php echo $row['comment']; ?>">
+			<br>
+			Category :<br>
+			<input class="form-control" type="text" name="Category" class="txtField" value="<?php echo $row['Category']; ?>">
 			<br>
 			Filetype:<br>
 			<input class="form-control" type="text" name="filetype" class="txtField" value="<?php echo $row['filetype']; ?>">
