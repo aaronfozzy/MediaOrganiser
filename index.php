@@ -14,7 +14,10 @@
 		<div class="form-group">
 			<form  method='post' action="index.php" enctype="multipart/form-data">
 			<!-- we will be sending data to database, hence the use of POST -->
+			<label for="myfile">Enter Media File:</label>
 			<input class="form-control" type="file" name="file">
+			<label for="myfile">Enter Image File:</label>
+			<input class="form-control" type="file" name="filetype">
 			<input class="form-control-text" type="text" name="comment" placeholder="enter your comment" required>
 			<input class="form-control-text" type="text" name="Category" placeholder="Category" required>
 			<!-- required, basic validation method -->
