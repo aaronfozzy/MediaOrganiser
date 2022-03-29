@@ -4,9 +4,9 @@
 	$new_query = "SELECT * FROM `playlist` ";
 	$result =  mysqli_query($dbConnection, $new_query);
 
-	if(mysqli_num_rows($result) == 0) { //if the sql row is empty
-		echo "<br><h1>Sorry, no data exists in this table</h1>"; //show this message
-	}
+	
+		echo "<br><h1>Main Playlist</h1>"; 
+
 	// create a table with the media data to be displayed
 	echo "<table class='table table-dark table-striped'>";
 	echo "<thead>" . "<tr>". "<td>". "view media". "</td>". "<td>". "filetype". "</td>". "<td>". "comment". "</td>"."<td>". "Category". "</td>" . "<td>". "Remove". "</td>"."<td>". "Change". "</td>". "</tr>". "</thead>"; // create table header
