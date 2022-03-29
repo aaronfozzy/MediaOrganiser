@@ -38,8 +38,11 @@ $row= mysqli_fetch_array($result);
 			Filetype:<br>
 			<input class="form-control" type="text" name="filetype" class="txtField" value="<?php echo $row['filetype']; ?>">
 			<br>
-			Image:<br>
+			Media:<br>
 			<input class="form-control" type="url" name="url" class="txtField" value="<?php echo $row['url']; ?>">
+			<br>
+			Image:<br>
+			<input class="form-control" type="url" name="url" class="txtField" value="<?php echo $row['image']; ?>">
 			<br>
 			<input class="form-control btn btn-primary" type="submit" name="submit" value="Submit" class="button">
 			

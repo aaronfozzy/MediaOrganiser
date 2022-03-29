@@ -145,3 +145,17 @@ table.table {
 table thead {
 	font-weight: bold;
 }
+
+/* MEDIA */
+
+.media{
+	position: relative;
+	left:90px;
+	top:100px;
+}
+
+.media-2{
+		position: relative;
+		left:250px;
+		bottom:200px;
+	}

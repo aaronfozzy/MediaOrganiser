@@ -21,7 +21,7 @@
 		$playlist_url = $table_row['url'];
 		$playlist_category = $table_row['Category'];
 				
-		echo "<tr>". "<td>". "<a class='btn btn-primary' href='view.php?id=$playlist_id'>View $playlist_name</a>"."</td>". "<td>". $playlist_type. "</td>". "<td>". $playlist_comment. "</td>"."<td>". $playlist_category. "</td>" . "<td>". "<a class='btn btn-primary' href='delete-process.php?id=$playlist_id'>Delete</a>"."</td>"."<td>". "<a class='btn btn-primary' href='update-process.php?id=$playlist_id'>Change</a>"."</td>"."</tr>";
+		echo "<tr>". "<td>". "<a class='btn btn-primary' href='view.php?id=$playlist_id'>View Media</a>"."</td>". "<td>". $playlist_type. "</td>". "<td>". $playlist_comment. "</td>"."<td>". $playlist_category. "</td>" . "<td>". "<a class='btn btn-primary' href='delete-process.php?id=$playlist_id'>Delete</a>"."</td>"."<td>". "<a class='btn btn-primary' href='update-process.php?id=$playlist_id'>Change</a>"."</td>"."</tr>";
 	}
 	echo "</table>";
 

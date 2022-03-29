@@ -23,9 +23,14 @@
 		while($row = mysqli_fetch_assoc($get_query)) { //loop through associative array and return media to be played
 			$name = $row['name'];
 			$url = $row['url'];
-			echo "<br><h2>Showing ". $name."</h2><br>";
-
-			echo "<embed src='$url' height='480' width='720'><br>"; // Add edit tag
+			$image = $row['image'];
+			echo "<br><h2>Showing Media</h2><br>";
+			echo "<div class='media'>";
+			echo "<embed src='$url' width='400' height='300'><br>";
+			echo "</div>";
+			echo "<div class='media-2'>";
+			echo "<embed src='$image' width='400' height='300'><br>"; // Add edit tag
+			echo "</div>";
 		}
 	} else {
 		echo "<p style='color:red;'>Failed to play media file></p>";
