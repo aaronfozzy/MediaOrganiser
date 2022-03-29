@@ -33,7 +33,9 @@ CREATE TABLE `playlist` (
   `name` varchar(100) NOT NULL,
   `comment` text NOT NULL,
   `filetype` text NOT NULL,
-  `url` varchar(150) NOT NULL
+  `url` varchar(150) NOT NULL,
+  'Category' varchar(100) NOT NULL,
+  'image' varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
