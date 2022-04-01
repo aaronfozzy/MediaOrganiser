@@ -42,7 +42,7 @@ $row= mysqli_fetch_array($result);
 			<input class="form-control" type="url" name="url" class="txtField" value="<?php echo $row['url']; ?>">
 			<br>
 			Image:<br>
-			<input class="form-control" type="url" name="url" class="txtField" value="<?php echo $row['image']; ?>">
+			<input class="form-control" type="url" name="image" class="txtField" value="<?php echo $row['image']; ?>">
 			<br>
 			<input class="form-control btn btn-primary" type="submit" name="submit" value="Submit" class="button">
 			
